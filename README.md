@@ -1,5 +1,5 @@
 # Cloudflare Chat App
-
+（由ai生成，我也不知道有没有效😋）
 Welcome to the Cloudflare Chat App! This project is a serverless chat application built using Cloudflare Workers and Pages. It allows users to chat in real-time, upload images, and authenticate using GitHub.
 
 ## Features
