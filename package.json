@@ -1,0 +1,30 @@
+{
+  "name": "cloudflare-chat-app",
+  "version": "1.0.0",
+  "description": "A serverless chat application using Cloudflare Workers and Pages, featuring GitHub login, image uploads, and online user count.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "sh scripts/deploy.sh",
+    "start": "wrangler dev",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "@types/node": "^16.9.1",
+    "@cloudflare/workers-types": "^2.2.0"
+  },
+  "keywords": [
+    "cloudflare",
+    "chat",
+    "serverless",
+    "github",
+    "oauth"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

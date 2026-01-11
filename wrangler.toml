@@ -1,0 +1,25 @@
+name = "cloudflare-chat-app"
+type = "javascript"
+
+account_id = "your_account_id"
+workers_dev = true
+compatibility_date = "2023-10-01"
+
+[[bindings]]
+type = "durable_object_namespace"
+name = "ChatRoom"
+class_name = "ChatRoom"
+
+[[bindings]]
+type = "kv_namespace"
+name = "Messages"
+binding = "MESSAGES"
+
+[[r2_buckets]]
+binding = "Images"
+bucket_name = "your_bucket_name"
+
+[env.production]
+workers_dev = false
+compatibility_date = "2023-10-01"
+zone_id = "your_zone_id"
