@@ -1,30 +1,21 @@
+// ...existing code...
 {
   "name": "cloudflare-chat-app",
   "version": "1.0.0",
-  "description": "A serverless chat application using Cloudflare Workers and Pages, featuring GitHub login, image uploads, and online user count.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "deploy": "sh scripts/deploy.sh",
-    "start": "wrangler dev",
-    "build": "tsc"
+    "dev": "npx wrangler@3 pages dev",
+    "build": "npx wrangler@3 pages build",
+    "deploy": "npx wrangler@3 pages deploy"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
-    "typescript": "^4.4.4",
-    "@types/node": "^16.9.1",
-    "@cloudflare/workers-types": "^2.2.0"
-  },
-  "keywords": [
-    "cloudflare",
-    "chat",
-    "serverless",
-    "github",
-    "oauth"
-  ],
-  "author": "Your Name",
-  "license": "MIT"
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2"
+  }
 }
+// ...existing code...
