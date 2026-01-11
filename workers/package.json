@@ -1,0 +1,18 @@
+{
+  "name": "cloudflare-chat-app-workers",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^3.0.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.0",
+    "wrangler": "^1.19.0"
+  }
+}
